@@ -1,0 +1,18 @@
+# github.com/logrusorgru/aurora v0.0.0-20181002194514-a7b3b318ed4e
+github.com/logrusorgru/aurora
+# github.com/meklis/http-snmpwalk-proxy v0.0.0-20210910180759-13d6f37ebf52
+## explicit
+github.com/meklis/http-snmpwalk-proxy/logger
+# github.com/meklis/proxy-tcp-connector v0.0.0-00010101000000-000000000000 => ./
+## explicit
+github.com/meklis/proxy-tcp-connector/binder
+github.com/meklis/proxy-tcp-connector/config
+github.com/meklis/proxy-tcp-connector/poller
+github.com/meklis/proxy-tcp-connector/structs
+# github.com/ztrue/tracerr v0.3.0
+## explicit
+github.com/ztrue/tracerr
+# gopkg.in/yaml.v2 v2.4.0
+## explicit
+gopkg.in/yaml.v2
+# github.com/meklis/proxy-tcp-connector => ./
