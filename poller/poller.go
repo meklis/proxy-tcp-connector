@@ -2,6 +2,7 @@ package poller
 
 import (
 	"fmt"
+	"proxy-tcp-connector/connection"
 	"strings"
 	"sync"
 	"time"
@@ -11,6 +12,7 @@ type (
 	Poller struct {
 		sync.RWMutex
 		binds                 map[string]Bind
+		Connections           map[string]connection.Connection
 		MaxConnections        int
 		MaxConnectionsPerHost int
 	}

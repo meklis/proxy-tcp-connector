@@ -5,6 +5,7 @@ import (
 	"github.com/ztrue/tracerr"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
+	"proxy-tcp-connector/connection"
 	"regexp"
 	"strconv"
 	"time"
@@ -39,6 +40,7 @@ type Configuration struct {
 		BindAddr string `yaml:"bind_addr"`
 		Path     string `yaml:"path"`
 	} `yaml:"prometheus"`
+	DeviceConfig map[string]connection.Config `yaml:"device_config"`
 }
 
 func LoadConfig(pathConfig string, configuration *Configuration) error {

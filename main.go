@@ -11,7 +11,7 @@ import (
 	"github.com/ztrue/tracerr"
 	"net"
 	"os"
-	"proxy-tcp-connector/device"
+	"proxy-tcp-connector/connection"
 	"regexp"
 	"strconv"
 	"strings"
@@ -206,7 +206,7 @@ func validIP4(ipAddress string) bool {
 
 func connect(conn net.Conn, ip string, port int) error {
 	//Initialize global variables
-	connect := device.Init(ip, port, device.Telnet)
+	connect := connection.Init(ip, port, connection.Telnet)
 	connect.OpenConnection()
 	lg.NoticeF("channel %v try open connect to %v", conn.RemoteAddr().String(), fmt.Sprintf("%v:%v", ip, port))
 	//one := []byte{}
